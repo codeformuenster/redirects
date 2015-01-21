@@ -6,10 +6,10 @@
             "components": [
                 {
                     "component_name": "c4m-redirect",
-                    "image": "registry.giantswarm.io/giantswarm/flaskexample",
+                    "image": "registry.giantswarm.io/codeformuenster/redirect-service",
                     "args": ["python", "manage.py runserver 0.0.0.0:8000"],
                     "ports": [ "8000/tcp" ],
-                    "domains": { "c4mredirect.gigantic.io": "8000" }
+                    "domains": { "redirect-$username.gigantic.io": "8000" }
                 }
             ]
         }
