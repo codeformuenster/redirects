@@ -7,9 +7,9 @@
                 {
                     "component_name": "c4m-redirect",
                     "image": "registry.giantswarm.io/codeformuenster/redirect-service",
-                    "args": ["python", "manage.py runserver 0.0.0.0:8000"],
+                    "args": ["python", "manage.py", "runserver", "0.0.0.0:8000"],
                     "ports": [ "8000/tcp" ],
-                    "domains": { "codeformuenster-redirect.gigantic.io": "8000" }
+                    "domains": { "c4m-redirect.gigantic.io": "8000" }
                 }
             ]
         }
